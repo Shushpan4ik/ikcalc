@@ -8,7 +8,7 @@
     var dark = preference ? preference === 'dark' : media.matches;
     root.dataset.theme = dark ? 'dark' : 'light';
     var button = document.getElementById('themeToggle');
-    if (button) button.setAttribute('aria-pressed', String(dark));
+    if (button) button.setAttribute('aria-checked', String(dark));
     var meta = document.querySelector('meta[name="theme-color"]');
     if (meta) meta.setAttribute('content', dark ? '#111923' : '#173b63');
   }
