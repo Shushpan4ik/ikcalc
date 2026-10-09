@@ -26,3 +26,5 @@ html[data-theme="dark"] .profile{background:#223143}html[data-theme="dark"] .pro
 .input select{color-scheme:light;background-color:var(--card);color:var(--ink)}
 select option,select optgroup{background-color:var(--card);color:var(--ink)}
 html[data-theme="dark"] select{color-scheme:dark;background-color:var(--card);color:var(--ink)}
+
+.coarse-tag{display:inline-block;margin:4px 0 4px 6px;font-size:11px;white-space:nowrap;vertical-align:middle}
