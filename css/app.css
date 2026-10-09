@@ -27,4 +27,4 @@ html[data-theme="dark"] .profile{background:#223143}html[data-theme="dark"] .pro
 select option,select optgroup{background-color:var(--card);color:var(--ink)}
 html[data-theme="dark"] select{color-scheme:dark;background-color:var(--card);color:var(--ink)}
 
-.coarse-tag{display:inline-block;width:5px;height:5px;margin-left:5px;border-radius:50%;background:currentColor;font-size:0;line-height:0;vertical-align:middle;position:relative;top:-.08em}
+.coarse-tag{display:inline-block;width:5px;height:5px;margin-left:5px;border-radius:50%;background:currentColor;font-size:inherit;line-height:0;vertical-align:baseline;position:relative;top:calc(-0.35em + 2.5px)}

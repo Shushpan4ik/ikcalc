@@ -1,6 +1,6 @@
 // ГОСТ 8724-2002, таблица 1: именно столбец «крупный», не максимальный доступный шаг.
 const METRIC_COARSE_PITCH={1:.25,1.1:.25,1.2:.25,1.4:.3,1.6:.35,1.8:.35,2:.4,2.2:.45,2.5:.45,3:.5,3.5:.6,4:.7,4.5:.75,5:.8,6:1,7:1,8:1.25,9:1.25,10:1.5,11:1.5,12:1.75,14:2,16:2,18:2.5,20:2.5,22:2.5,24:3,27:3,30:3.5,33:3.5,36:4,39:4,42:4.5,45:4.5,48:5,52:5,56:5.5,60:5.5,64:6,68:6};
-function coarseBadge(t){return t.system==='METRIC_GOST'&&METRIC_COARSE_PITCH[t.diameter_mm]===t.pitch_mm?'<span class="coarse-tag" title="Крупный шаг" aria-label="Крупный шаг">●</span>':''}
+function coarseBadge(t){return t.system==='METRIC_GOST'&&METRIC_COARSE_PITCH[t.diameter_mm]===t.pitch_mm?'<span class="coarse-tag" title="Крупный шаг" aria-label="Крупный шаг"></span>':''}
 
 const $=id=>document.getElementById(id), fmt=(x,n=3)=>x==null||Number.isNaN(+x)?'—':Number(x).toFixed(n).replace('.',',').replace(/,?0+$/,'');
 let side='external', last=[], prevPage='reference', current=null, sort={key:'diameter_mm',dir:1};
