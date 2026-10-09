@@ -22,4 +22,4 @@
 // Ask existing installations to replace the retired cache-first worker.
 // Startup never waits for service-worker or storage operations.
 if('serviceWorker' in navigator){navigator.serviceWorker.getRegistrations().then(function(rs){rs.forEach(function(r){var worker=r.active||r.waiting||r.installing;if(worker&&new URL(worker.scriptURL).pathname==='/service-worker.js')r.update().catch(function(){})})}).catch(function(){})}
-</script><script src="js/gost-tolerances.js?v=20261004-3"></script><script src="js/data.js?v=20261004-3"></script><script src="js/app.js?v=20261004-3"></script></body></html>
+</script><script src="js/gost-tolerances.js?v=20261009-1"></script><script src="js/data.js?v=20261009-1"></script><script src="js/app.js?v=20261004-3"></script></body></html>
