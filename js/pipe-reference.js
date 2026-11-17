@@ -108,6 +108,7 @@ function pipeDetail(thread) {
   }
 
   return '<div class="detailTop"><div><span class="tag">ASME · ' + series + '</span><h2>' + thread.designation + '</h2></div></div>'
+    + pipeDiagram(series)
     + tableHtml(dimensions, 'Базовые размеры')
     + tableHtml(diameters, taper ? 'Базовые диаметры в указанных плоскостях' : 'Предельные диаметры')
     + tableHtml(tolerances, 'Допуски и контроль')
